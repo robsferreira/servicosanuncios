@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #F4F4F4;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+header {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+.banner {
+    background: url('../imagens/bannertop.png') no-repeat center center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.imgcontato {
+    background: url('../imagens/6045754.jpg') no-repeat center center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+#servicos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.servico-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0,0.1);
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+    transition: tranform 0.3s;
+}
+
+.servico-card:hover {
+    transform: scale(1.05);
+}
+
+.servico-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3125rem;
+}
+
+#contato {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    height: 100%;
+    background: #333;
+    color: white;
+}
+
+/* Estilos para Desktop*/
+
+@media (min-width: 768px) {
+    .servicos-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

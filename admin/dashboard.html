@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Link Regional</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <h1>Gerenciar Anúncios</h1>
+            <button onclick="abrirModalNovoServico()">Novo Anúncio</button>
+        </div>
+
+        <div class="servicos-grid" id="servicosGrid">
+            <!-- Serviços serão carregados aqui -->
+        </div>
+    </div>
+
+    <!-- Modal para novo/editar serviço -->
+<div id="servicoModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modalTitle">Novo Anúncio</h2>
+            <button type="button" class="modal-close" onclick="fecharModal()">&times;</button>
+        </div>
+
+        <div id="feedbackMessage" class="feedback-message" style="display: none;"></div>
+
+        <form id="servicoForm" class="modal-form">
+            <div class="form-group">
+                <label for="nome">Nome do Serviço:</label>
+                <input type="text" id="nome" name="nome" required 
+                placeholder="Digite o nome do serviço">
+            </div>
+            
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required
+                placeholder="Digite uma descrição breve do serviço"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="detalhes">Detalhes (opcional):</label>
+                <textarea id="detalhes" name="detalhes"
+                placeholder="Adicione detalhes adicionais do serviço"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="whatsapp">WhatsApp:</label>
+                <input type="text" id="whatsapp" name="whatsapp" required
+                placeholder="Ex: +5519999999999">
+            </div>
+            
+            <div class="form-group">
+                <label for="imagem">Imagem (opcional):</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*"
+                class="file-input">
+            </div>
+
+            <input type="hidden" id="servicoId">
+            
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="fecharModal()">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

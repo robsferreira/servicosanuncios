@@ -1,0 +1,16 @@
+[
+    {
+        "nome": "Oficina do Computador",
+        "descricao": "Servi\u00e7os de inform\u00e1tica - Manuten\u00e7\u00f5es - Desenvolvimento",
+        "detalhes": "Formata\u00e7\u00e3o de Computadores e Notebooks e desenvolvimento de Sites e Sistemas.",
+        "whatsapp": "+5515996653508",
+        "imagem": "imagens\/Oficina.png"
+    },
+    {
+        "nome": "L.B Transportes",
+        "descricao": "Frete",
+        "detalhes": "Mudan\u00e7as",
+        "whatsapp": "+551996633311",
+        "imagem": "imagens\/lbfretes.png"
+    }
+]
