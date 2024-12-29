@@ -1,7 +1,7 @@
 <?php
 // Configurações de segurança
 define('ADMIN_USER', 'Robson'); // Altere para o nome de usuário desejado
-define('ADMIN_PASS_HASH', password_hash('Batman@1979', PASSWORD_DEFAULT)); // Altere 'sua_senha_aqui'
+define('ADMIN_PASS_HASH', password_hash('WIcN%A2cG£39', PASSWORD_DEFAULT)); // Altere 'sua_senha_aqui'
 define('JWT_SECRET', '5d41402abc4b2a76b9719d911017c592'); // Altere para uma chave secreta forte
 
 // Configurações de upload
