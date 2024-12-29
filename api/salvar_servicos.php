@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: application/json');
+header('Content-Type: application/json; charset=utf-8');
 
 try {
     // Receber os dados JSON
@@ -13,7 +13,7 @@ try {
     $arquivo = '../servicos.json';
     
     // Salvar os dados no arquivo
-    if (file_put_contents($arquivo, json_encode($dados, JSON_PRETTY_PRINT))) {
+    if (file_put_contents($arquivo, json_encode($dados, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
         echo json_encode(['success' => true, 'message' => 'Dados salvos com sucesso']);
     } else {
         throw new Exception('Erro ao salvar arquivo');
